@@ -17,7 +17,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import header from './components/header/header';
+  import header from '@/components/header/header';
   const ERR_OK = 0;
   export default {
     name: 'app',

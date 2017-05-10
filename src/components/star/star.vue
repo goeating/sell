@@ -25,9 +25,13 @@
       },
       itemClasses() {
         let result = [];
-        let score = Math.floor(this.score * 2) / 2;// 4.3*2 = 8.6 向下取整得8 / 2 得4 ，4.6*2 = 9.2 向下取整得9 / 2 得 4.5
-        let hasDecimal = score % 1 !== 0;// 是否有小数
-        let integer = Math.floor(score);// 向下取整
+//        4.3*2 = 8.6 向下取整得8 / 2 得4 ，4.6*2 = 9.2 向下取整得9 / 2 得 4.5
+        let score = Math.floor(this.score * 2) / 2;
+//        是否有小数
+        let hasDecimal = score % 1 !== 0;
+//        向下取整
+        let integer = Math.floor(score);
+
         for (let i = 0; i < integer; i++) {
           result.push(CLS_ON);
         }
